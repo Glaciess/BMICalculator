@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
                 val bmitotal = KG.text.toString().toDouble() / ((CM.text.toString().toDouble() / 100)*(CM.text.toString().toDouble() / 100))
 
 
-
+ 
                 if(bmitotal<18.5){
                     BMIPIC.setImageResource(R.drawable.under)
                     BMI.text = "BMI : %.2f (UNDER)".format(bmitotal)
@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity() {
                     BMIPIC.setImageResource(R.drawable.normal)
                     BMI.text = "BMI : %.2f (NORMAL)".format(bmitotal)
                 }
-                else if(bmitotal > 24.9){  
+                else if(bmitotal > 24.9){
                     BMIPIC.setImageResource(R.drawable.over)
                     BMI.text = "BMI : %.2f (Over)".format(bmitotal)
                 }
